@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[url('Asset/Img_bg_acceuil.png')] bg-cover">
+
+    <header>
+        <div class="bg-white rounded-lg shadow m-4 dark:bg-gray-800" w3-include-html="nav_bar.html"></div>
+    </header>
+    
+    <main class="container max-w-auto  p-[10%] flex  flex-col items-center gap-10">
+        <h2 class=" text-3xl text-[#cfa832] underline">Nos Date de combat </h2>
+        <div class=" bg-white w-full" id='calendar'></div>
+    </main>
+    <div w3-include-html="footer.html"></div>
+
+    <script src="include.js"></script>
+    <script src="Js.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js "></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
+</body>
+</html>

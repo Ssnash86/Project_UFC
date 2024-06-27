@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UFC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="bar_evenement.css">
+
 </head>
-<body>
+
+<body class="p-0 m-0 bg-[#fef5ce]">
+    <header class="bg-[url('Asset/Img_header_Acceuil.jpg')] lg:h-[80vh] md:h-[60vh] h-[40vh] w-auto bg-cover ">
+        <div class="bar_defilement ">
+            <p class="text-[#cfa832]" id="bar_rencontre"></p>
+        </div>
+        <div class="flex   justify-center h-full items-end ">
+            <img class=" lg:h-[30vh] md:h-[20vh] h-[10vh]  w-auto bg-[#0000008a] " src="Asset/texte.png" alt="citation">
+        </div>
+
+    </header>
+
+
+    <main class="bg-[#fef5ce] ">
+        <div class="border-2 border-[#a82222] mx-[8%] m-12 "></div>
+        <div class="bg-white rounded-lg shadow m-4 dark:bg-gray-800" w3-include-html="nav_bar.html"></div>
+        <div class=" flex justify-center ">
+            <div>
+                <img src="" alt="">
+            </div>
+            <div class=" w-[150vh]  flex flex-col gap-6    ">
+                <article class="flex  flex-col items-center gap-6 border-2 border-[#a82222] m-4">
+                    <h2>Présentation UFC</h2>
+                    <p class="mb-6 mx-6"> L'Ultimate Fighting Championship (UFC) est une organisation américaine d'arts
+                        martiaux mixtes (MMA), actuellement reconnue comme la plus importante ligue mondiale de ce sport
+                        de combat. La première soirée tenue par la promotion en novembre 1993 à Denver dans le Colorado,
+                        se présente comme un tournoi permettant de confronter différents styles d'arts martiaux et
+                        sports de combat dans des règles libres. Cet événement est alors souvent considéré comme un
+                        pilier de l'avènement des « MMA modernes ».
+
+                        L'organisation a depuis évolué, passant d'une compétition inter-styles à un sport de combat dont
+                        les règles, désormais bien établies et reconnues par de nombreuses commissions athlétiques aux
+                        États-Unis et à travers le monde, ont dû être petit à petit modifiées pour éviter les
+                        interdictions et protéger la santé des combattants. En 2013, l'UFC avait sous contrat environ
+                        450 compétiteurs. En 2014, la fédération organisait 46 événements à travers le monde,
+                        principalement aux États-Unis, mais aussi au Japon, au Brésil, en Australie ou en Chine. </p>
+                </article>
+                <article class="flex  flex-col items-center gap-6 border-2 border-[#a82222] m-4">
+                    <h2>New</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero sed sapiente cupiditate. Illo
+                        adipisci obcaecati, quaerat quibusdam in laboriosam quas, praesentium asperiores tenetur quis
+                        aliquid voluptate debitis nobis temporibus ipsam.</p>
+                </article>
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+
+            </section>
+        </div>
+
+        <div w3-include-html="footer.html"></div>
+    </main>
     
+
+    <script src="include.js"></script>
+    <script src="Js.js"></script>
 </body>
+
 </html>

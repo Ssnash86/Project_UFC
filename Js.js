@@ -47,22 +47,33 @@ if (tableau) {
 
 
 
-let calendar = document.getElementById('calendar');
-document.addEventListener('DOMContentLoaded', function () {
-
-
+    let calendarEl = document.getElementById('calendar');
 
     fetch("date_combat_ufc.json")
         .then(res => res.json())
         .then(res => {
-            const calendarEl = document.getElementById('calendar')
-            const calendar = new FullCalendar.Calendar(calendarEl, {
+
+            let data = [];
+
+            for(let i = 0; i < res.length; i++){
+                data.push({ title: res[i].Name, start: res[i].DateTime,  color: 'red',
+                    
+                  } );
+            }
+
+            console.log(data)
+
+            let calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'dayGridMonth',
-                events: 'date_combat_ufc.json'
-            })
-            
-            calendar.render()
-        })
-})
+                events: data
+                
+            });
+            calendar.render();
+
+        });
+
+
+
+
 
 

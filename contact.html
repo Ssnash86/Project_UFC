@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body class="bg-[#fef5ce] h-[100vh] w-auto">
+    <header class="w-[100%]">
+        <div class="bg-white  rounded-lg shadow m-4 dark:bg-gray-800" w3-include-html="nav_bar.html"></div>
+    </header>
+
+    <main
+        class=" container mx-auto flex flex-col items-center max-md:hidden:bg-[url('Asset/grillage.png') bg-[url('Asset/grillage.png')] bg-cover">
+
+        <h2 class=" text-6xl text-[red] mt-[5%] underline font-bold  bg-[#fef5ce]"> Votre avis nous intéresse</h2>
+
+        <form class="flex  gap-6 bg-white border-4  m-6 h-[20%] w-[50%] justify-around" action="">
+            <div class="flex ">
+                <img         src="Asset/Img_dessin_contact.png" alt="combatantUFC">
+            </div>
+            <section class="flex flex-col  ">
+                <div class="flex flex-col">
+                    <div class=" flex flex-row gap-2  p-6">
+                        <label for="Nom"></label>
+                        <input class="input border-2" type="text" placeholder="Nom-Prénom" name="Nom">
+
+                        <label for="Mail"></label>
+                        <input class="input border-2" type="email" placeholder="Courriel" name="Courriel">
+
+                    </div>
+                    <div class="flex m-2 p-6 h-[100%]">
+                        <label for="Commentaire"></label>
+                        <textarea class="input border-2 w-full h-[100%] " id="Commentaire" type="textarea"
+                            placeholder="Commentaire" name=Commentaire></textarea>
+                    </div>
+                </div>
+                <button class="border-2 rounded-2xl items-center m-6">Envoyer</button>
+            </section>
+
+        </form>
+
+    </main>
+
+
+
+
+
+
+    <div class="w-[100%]" w3-include-html="footer.html"></div>
+    <script src="include.js"></script>
+</body>
+
+</html>

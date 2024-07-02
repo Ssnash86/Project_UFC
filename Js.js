@@ -71,9 +71,16 @@ if (tableau) {
             calendar.render();
 
         });
+        
+        new Splide('.splide').mount();
+
+
+       
 
 
 
+
+        
 
 
 

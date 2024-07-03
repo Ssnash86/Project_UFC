@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendrier</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/btn_nav_bar.css">
 
 </head>
+
 <body class="bg-[url('Asset/Img_bg_acceuil.png')]  bg-cover flex items-center flex-col">
 
     <header class="w-[100%]">
-        <div class="bg-white  rounded-lg shadow m-4 dark:bg-gray-800" w3-include-html="nav_bar.html"></div>
+        <!-- Nav bar -->
+        <section id="bar_nav" class=" h-10 flex justify-between m-4 items-center text-[#408ec6] bg-[#1e2761] shadow-xl">
+
+            <a href="index.html" class="flex  space-x-3 rtl:space-x-reverse">
+                <img src="Asset/Icone_UFC.png" class=" h-8 fill-[#A82222]" alt="UFC logo" /></a>
+            <nav id="menu" class="">
+                <ul class="lg:flex lg:gap-6">
+                    <li><a href="index.html">Présentation</a>
+                    <li><a href="Nos_combatant.html">Nos combattants</a>
+                    <li><a href="calendrier.html">Calendrier</a>
+                    <li><a href="contact.html">Contact</a>
+                </ul>
+
+            </nav>
+            <div id="menu-button" class="close"></div>
+        </section>
+
     </header>
-    
-    <main class="container   p-[10%] flex  flex-col items-center gap-10">
-        <h2 class=" text-3xl text-[red] font-bold uppercase  underline">Nos Date de combat </h2>
-        <div class=" bg-[#fef5ce] rounded-2xl w-full" id='calendar'></div>
+
+    <main class=" w-full h-full">
+        <section class="container w-full  p-[10%] flex  flex-col items-center gap-10">
+            <h2 class=" text-3xl text-[#1e2761] font-bold uppercase  underline">Nos Date de combat </h2>
+            <div class=" bg-[#408ec6]  rounded-2xl w-full  " id='calendar'></div>
+        </section>
     </main>
     <div class="w-[100%]" w3-include-html="footer.html"></div>
 
-    <script src="include.js"></script>
-    <script src="Js.js"></script>
-    <script src=" https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js "></script>
+    <!-- Script -->
+    <script src="js/include.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/nav_bar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js "></script>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
 </body>
+
 </html>

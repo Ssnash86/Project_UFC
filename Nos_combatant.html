@@ -5,29 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos combattants</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="bar_evenement.css">
+    <link rel="stylesheet" href="css/bar_evenement.css">
+    <link rel="stylesheet" href="css/btn_nav_bar.css">
     <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
 </head>
 <body class="flex flex-col ">
-    <header class="  bg-[url('Asset/Img_header_Combatant.jpg')] lg:h-[80vh] md:h-[60vh] h-[40vh] w-auto bg-cover ">
+    <header class="  bg-[url('Asset/Img_header_Combatant.jpg')] lg:h-[80vh] md:h-[60vh] h-[40vh] w-auto bg-cover  ">
         <div class="bar_defilement ">
-            <p class="text-[#cfa832]" id="bar_rencontre"></p>
+            <p class="text-[#408ec6]" id="bar_rencontre"></p>
         </div>
     </header>
 
-    <main class="bg-[#fef5ce] px-4 ">
-        <div class="bg-white rounded-lg shadow m-4 dark:bg-gray-800" w3-include-html="nav_bar.html"></div>
+    <main class="bg-[#7a2048] px-4 ">
+         <!-- Nav bar -->
+         <section id="bar_nav" class=" h-10 flex justify-between m-4 items-center text-[#408ec6] bg-[#1e2761] shadow-xl">
+
+            <a href="index.html" class="flex  p-4">
+                <img src="Asset/Icone_UFC.png" class=" h-8 fill-[#1e2761]" alt="UFC logo" /></a>
+            <nav id="menu" class="">
+                <ul class="lg:flex lg:gap-6">
+                    <li><a href="index.html">Présentation</a>
+                    <li><a href="Nos_combatant.html">Nos combattants</a>
+                    <li><a href="calendrier.html">Calendrier</a>
+                    <li><a href="contact.html">Contact</a>
+                </ul>
+
+            </nav>
+            <div id="menu-button" class="close"></div>
+        </section>
         <section class="container mx-auto">
-            <h1 class="flex text-[#cfa832] justify-center underline text-3xl m-2 font-bold ">Retrouvez tous nos combattants</h1>
+            <h1 class="flex text-[#408ec6] justify-center underline text-3xl m-2 font-bold ">Retrouvez tous nos combattants</h1>
             <div id="tableau"></div>
         </section>
         <div w3-include-html="footer.html"></div>
     </main>
     
-
+<!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
-    <script src="include.js"></script>
-    <script src="Js.js"></script>
+    <script src="js/include.js"></script>
+    <script src="js/bar_evenement.js"></script>
+    <script src="js/nav_bar.js"></script>
 
     
 </body>

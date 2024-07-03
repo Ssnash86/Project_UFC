@@ -1,0 +1,23 @@
+
+
+.fc-event-color{
+  color:#1e2761
+}
+
+.fc-event-title {
+  margin: 1px;
+  padding: 1px;
+  white-space: normal;
+  color: #1e2761;
+  text-decoration: underline;
+
+}
+
+.fc-event-time {
+  margin: 1px;
+  padding: 1px;
+  white-space: normal;
+  font-size: .9em;
+  width: 3em;
+}
+

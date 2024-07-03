@@ -1,25 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/btn_nav_bar.css">
 
 
 </head>
 
-<body class="bg-[#fef5ce] h-[100vh] w-auto">
+<body class="bg-[#7a2048] h-[100vh] w-auto">
     <header class="w-[100%]">
-        <div class="bg-white  rounded-lg shadow m-4 dark:bg-gray-800" w3-include-html="nav_bar.html"></div>
+        <!-- Nav bar -->
+        <section id="bar_nav" class=" h-10 flex justify-between m-4 items-center text-[#408ec6] bg-[#1e2761] shadow-xl">
+
+            <a href="index.html" class="flex p-4">
+                <img src="Asset/Icone_UFC.png" class=" h-8 fill-[#A82222]" alt="UFC logo" /></a>
+            <nav id="menu" class="">
+                <ul class="lg:flex lg:gap-6">
+                    <li><a href="index.html">Présentation</a>
+                    <li><a href="Nos_combatant.html">Nos combattants</a>
+                    <li><a href="calendrier.html">Calendrier</a>
+                    <li><a href="contact.html">Contact</a>
+                </ul>
+            </nav>
+            <div id="menu-button" class="close"></div>
+        </section>
     </header>
 
     <main
         class=" container mx-auto flex flex-col items-center max-md:hidden:bg-[url('Asset/grillage.png') bg-[url('Asset/grillage.png')] bg-cover">
-
-        <h2 class=" text-6xl text-[red] mt-[5%] underline font-bold  bg-[#fef5ce]"> Votre avis nous intéresse</h2>
-
+        <h2 class=" text-6xl text-[#79a7d3] mt-[5%] underline font-bold  bg-[#7a2048]"> Votre avis nous intéresse</h2>
         <form class="flex lg:flex-row gap-6 bg-white border-4 max-md:flex-col m-6 justify-around" action="">
             <div class="flex">
                 <img class="w-[300px] flex self-center" src="Asset/Img_dessin_contact.png" alt="combatantUFC">
@@ -36,24 +49,20 @@
                     </div>
                     <div class="flex m-2 p-4 h-[10em]">
                         <label for="Commentaire"></label>
-                        <textarea class="input container max-w-auto border-2 w-[100%] h-[100%] " id="Commentaire" type="textarea"
-                            placeholder="Commentaire" name=Commentaire></textarea>
+                        <textarea class="input container max-w-auto border-2 w-[100%] h-[100%] " id="Commentaire"
+                            type="textarea" placeholder="Commentaire" name=Commentaire></textarea>
                     </div>
                 </div>
                 <button class="border-2 rounded-2xl items-center m-6">Envoyer</button>
             </section>
-
         </form>
-
     </main>
 
-
-
-
-
-
     <div class="w-[100%]" w3-include-html="footer.html"></div>
-    <script src="include.js"></script>
+
+    <!-- Script -->
+    <script src="js/nav_bar.js"></script>
+    <script src="js/include.js"></script>
 </body>
 
 </html>

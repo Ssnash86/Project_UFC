@@ -5,34 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UFC</title>
+    <link rel="stylesheet" href="css/bar_evenement.css">
+    <link rel="stylesheet" href="css/btn_nav_bar.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="bar_evenement.css">
-    <link rel="stylesheet" href="btn_nav_bar.css">
     <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
-    
+
 </head>
 
-<body class="p-0 m-0 bg-[#fef5ce] ">
-    <main >
-        <header class="bg-[url('Asset/Img_header_Acceuil.jpg')] lg:h-[80vh] md:h-[60vh] h-[40vh] w-auto bg-cover ">
+<body class="p-0 m-0 bg-[#7a2048]">
+    <main>
+        <header
+            class="bg-[url('Asset/Img_header_Acceuil.jpg')] lg:h-[80vh] md:h-[60vh] h-[40vh] w-auto bg-cover ">
             <div class="bar_defilement ">
-                <p class="text-[#cfa832]" id="bar_rencontre"></p>
+                <p class="text-[#408ec6]" id="bar_rencontre"></p>
             </div>
             <div class="flex   justify-center h-full items-end ">
-                <img class=" lg:h-[30vh] md:h-[20vh] h-[10vh]  w-auto bg-[#0000008a] " src="Asset/texte.png"
+                <img class=" lg:h-[30vh] md:h-[20vh] h-[20vh]  w-auto bg-[#0000008a] " src="Asset/texte.png"
                     alt="citation">
             </div>
-
         </header>
-
         <section class="lg:bg-[url('Asset/Img_Combatant.png')] lg:bg-no-repeat lg:bg-right  ">
             <div class="border-2 border-[#a82222] mx-[8%] m-12 "></div>
-            <div class="bg-[white] rounded-lg shadow-xl m-4 dark:bg-gray-800" w3-include-html="nav_bar.html"></div>
+            <!-- nav bar -->
+            <section id="bar_nav" class=" h-10 flex justify-between m-8 items-center  bg-[#1e2761] shadow-xl">
+
+                <a href="index.html" class="flex  space-x-3 rtl:space-x-reverse">
+                    <img src="Asset/Icone_UFC.png" class=" h-8 fill-[#A82222]" alt="UFC logo" /></a>
+
+
+                <nav id="menu" class="">
+                    <ul class="lg:flex lg:gap-6 underline text-[#408ec6] ">
+                        <li><a href="index.html">Présentation</a>
+                        <li><a href="Nos_combatant.html">Nos combattants</a>
+                        <li><a href="calendrier.html">Calendrier</a>
+                        <li><a href="contact.html">Contact</a>
+                    </ul>
+
+                </nav>
+                <div id="menu-button" class="close"></div>
+            </section>
+
             <div class=" flex justify-center ">
-                <div class=" w-[72%]  flex flex-col gap-6">
-                    <article class="flex  flex-col items-center gap-6 border-2 border-[#a82222]  rounded-2xl m-4 max-w-[80%] ">
-                        <h2 class="mt-6">Présentation UFC</h2>
-                        <p class="mb-6 mx-6 indent-8    "> L'Ultimate Fighting Championship (UFC) est une organisation
+                <div class=" lg:w-[72%] md:w-full flex flex-col gap-6">
+                    <article
+                        class=" max-md:mx-10 lg:flex lg:flex-col lg:items-center gap-6 border-2 border-[#a82222]  rounded-2xl lg:m-4 lg:max-w-[80%] ">
+                        <h2 class="mt-6 text-xl text-[#408ec6] underline">Présentation UFC</h2>
+                        <p class="mb-6 mx-6 indent-8 text-white   "> L'Ultimate Fighting Championship (UFC) est une organisation
                             américaine d'arts
                             martiaux mixtes (MMA), actuellement reconnue comme la plus importante ligue mondiale de ce
                             sport
@@ -53,14 +71,14 @@
                             principalement aux États-Unis, mais aussi au Japon, au Brésil, en Australie ou en Chine.
                         </p>
                     </article>
-                    <section class="lg:bg-[url('Asset/Img_tv.png')] lg:bg-cover lg:min-h-[100vh] ">
+                    <section class=" max-lg:hidden lg:bg-[url('Asset/Img_tv.png')] bg-cover min-h-[100vh] text-white ">
                         <article>
                             <div id="splide_0" class="splide lg:w-[60%] lg:ml-[10%] " role="group"
                                 aria-label="Splide Basic HTML Example">
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <li class="splide__slide lg:mt-[12%]">
-                                            <img class="w-1/2 m-2 float-left rounded-2xl"
+                                            <img class="lg:w-1/2 m-2 lg:float-left rounded-2xl"
                                                 src="https://www.actumma.com/wp-content/uploads/2024/07/Joe-Pyfer-Ko-Sensationnel.jpg"
                                                 alt="">
                                             <p class="p-4"> Samedi dernier, Joe Pyfer a réalisé une performance
@@ -91,13 +109,9 @@
                                         </li>
                                         <li class="splide__slide flex lg:items-center max-md:flex-col ">
                                             <iframe class="float-left pr-4 rounded-2xl lg:mt-[10%]" width="357"
-                                                height="560" src="https://www.youtube.com/embed/xY9wANTG5OI"
-                                                title="Alex Pereira VICIOUSLY KO’s Jiri Prochazka At UFC 303 😱"
-                                                frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                                                frameborder="0"></iframe>
-                                            <p class="">Devant la violence des coups de «Paotan», Jiri Prochazka, qui
+                                                height="560" src="https://www.youtube.com/embed/xY9wANTG5OI">
+                                            </iframe>
+                                            <p>Devant la violence des coups de «Paotan», Jiri Prochazka, qui
                                                 est pourtant l'un des hommes forts de l'organisation, a eu du mal à se
                                                 relever et a ensuite dû être soutenu par l'arbitre et par le personnel
                                                 médical pendant de nombreuses minutes. Le Tchèque n'arrivant même pas à
@@ -109,20 +123,71 @@
 
                                         </li>
                                         <li class="splide__slide pl-2 lg:mt-[20%]">
-                                            <h2 class="mb-6 flex justify-center underline font-bold uppercase">Manon
+                                            <h2
+                                                class="mb-6 flex justify-center underline font-bold uppercase text-[#408ec6]">
+                                                Manon
                                                 Fiorot veut relever le défi</h2>
                                             <iframe class="w-full h-[85%] rounded-2xl"
-                                                src="https://www.youtube.com/embed/TkjUWAeNS3I"
-                                                title="ITW UFC : Un combat pour le titre dans trois mois ? Manon Fiorot veut relever le défi"
-                                                frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                referrerpolicy="strict-origin-when-cross-origin"
-                                                allowfullscreen></iframe>
+                                                src="https://www.youtube.com/embed/TkjUWAeNS3I"></iframe>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </article>
+                    </section>
+                    <section class="lg:hidden md:flex md:my-4">
+                        <article class="md:flex md:flex-col md:justify-center md:my-4">
+                            <img class=" md:rounded-2xl"
+                                src="https://www.actumma.com/wp-content/uploads/2024/07/Joe-Pyfer-Ko-Sensationnel.jpg"
+                                alt="">
+                            <p class="md:p-4"> Samedi dernier, Joe Pyfer a réalisé une performance
+                                explosive
+                                dans la cage.
+                                Sur un uppercut, il a envoyé son adversaire tête la première au sol.
+                                Découvrez la vidéo de ce KO sensationnel. <br>
+
+                                Depuis son arrivée à l'UFC en 2022, Joe Pyfer fait tourner les têtes. Le
+                                jeune prospect américain de la catégorie des -84 kg s'est fait remarquer
+                                pour sa puissance de frappe anormale : il a battu le record de Francis
+                                Ngannou pour le coup de poing le plus puissant à l'UFC. Une aptitude qui
+                                se
+                                traduit dans sa carrière : depuis ses débuts à l'UFC, Pyfer est en 4-1,
+                                avec
+                                3 KO et une soumission. <br>
+
+                                Une véritable machine à finish, Pyfer a connu un bref contretemps en
+                                février
+                                lorsqu'il s'est incliné par décision unanime contre Jack Hermansson, un
+                                vétéran de la catégorie. Il avait exprimé sa frustration avec sa
+                                performance
+                                après le combat, promettant de revenir plus motivé. Une promesse qu'il a
+                                tenu en beauté, avec sa victoire sensationnelle par KO contre Marc-André
+                                Barriault à l'UFC 303.</p><br>
+                            <a class="underline text-sm"
+                                href="https://www.actumma.com/">source: https://www.actumma.com/ </a>
+                        </article>
+                        <article class=" md:flex md:flex-col md:justify-center md:my-4">
+                            <iframe class=" md:pr-4 rounded-2xl " width="357"
+                                height="560" src="https://www.youtube.com/embed/xY9wANTG5OI">
+                            </iframe>
+                            <p>Devant la violence des coups de «Paotan», Jiri Prochazka, qui
+                                est pourtant l'un des hommes forts de l'organisation, a eu du mal à se
+                                relever et a ensuite dû être soutenu par l'arbitre et par le personnel
+                                médical pendant de nombreuses minutes. Le Tchèque n'arrivant même pas à
+                                s'asseoir sur le tabouret.<br><br>
+                                <a class=" underline text-sm"
+                                    href="https://www.youtube.com/shorts/xY9wANTG5OI">source:
+                                    https://www.youtube.com/shorts/xY9wANTG5OI </a>
+                            </p>
+
+                        </article>
+                        <article class="  md:flex md:flex-col md:justify-center md:my-4 ">
+                            <h2 class="md:mb-6 md:flex md:justify-center md:underline font-bold uppercase text-[red]">Manon
+                                Fiorot veut relever le défi</h2>
+                            <iframe class=" rounded-2xl"
+                                src="https://www.youtube.com/embed/TkjUWAeNS3I"></iframe>
+                        </article>
+                    </section>
                 </div>
 
             </div>
@@ -130,15 +195,16 @@
             </div>
 
             <div w3-include-html="footer.html"></div>
-        </section>
+        
     </main>
-    <script>
-        new Splide('#splide_0').mount();
-        </script>
 
+    <!-- Script -->
+    <script>new Splide('#splide_0').mount();</script>
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
-    <script src="include.js"></script>
-    <script src="Js.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/include.js"></script>
+    <script src="js/bar_evenement.js"></script>
+    <script src="js/nav_bar.js"></script>
 </body>
 
 </html>
